@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cosmic Sandbox</title>
+    <style>
+      html, body { margin: 0; padding: 0; height: 100%; background: #000; color: #ddd;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; overflow: hidden; }
+      #app { position: fixed; inset: 0; }
+      #hud { position: fixed; top: 12px; left: 12px; font-size: 12px; line-height: 1.5;
+        pointer-events: none; opacity: 0.85; user-select: none; }
+      #hud kbd { background: #222; border: 1px solid #444; padding: 0 4px; border-radius: 3px; }
+      .lil-gui.root { --background-color: rgba(15,15,20,0.85); --widget-color: #2a2a35; }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="hud">
+      <div><b>Cosmic Sandbox</b></div>
+      <div>좌클릭 드래그: 행성 생성 (드래그=초기 속도)</div>
+      <div>Shift+좌클릭: 행성 선택</div>
+      <div>우클릭 드래그: 카메라 회전 · 휠: 줌</div>
+      <div>우측 하단 패널: 관리자 제어</div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
